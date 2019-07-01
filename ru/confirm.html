@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sinoni.Men">
+    <meta name="description" content="Подтверждение email на сайте Sinoni.Men">
+
+    <title>Подтверждение email Sinoni.Men</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="apple-mobile-web-app-title" content="Sinoni.Men">
+    <meta name="application-name" content="Sinoni.Men">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background:#22272b">
+
+<nav class="nav-top navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="nav-top-mobile">
+                <div class="mobile-search">
+                    <a href="javascript:void(0)" class="mobile-search-trigger" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="mobile-search-active animated fadeInDown">
+                        <div class="mobile-search-box">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input class="mobile-search-input" name="search" type="text" spellcheck="false" placeholder="Поиск ...">
+                            <button type="button" class="close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo ">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.svg" alt="Sinoni.Men" id="logo">
+                    <span>Sinoni.Men</span>
+                    <small class="hidden-xs">Подтверждение</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse hidden-xs">
+            <ul class="nav navbar-nav navbar-right notify">
+                <li class="dropdown">
+                    <a href="#" class="lang dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU<span class="caret"></span></a>
+                    <ul class="lang-dropdown dropdown-menu animated flipInX">
+                        <li>
+                            <a class="lang-item" href="//rewriter.tools">
+                                <img src="/images/EN.png" alt="England flag"> English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" name="search" spellcheck="false" placeholder="Поиск ...">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panelWrapper">
+                <div class="panel panel-default login-form">
+                    <div class="text-center form-message">
+                        <img src="/images/logo.svg" class="center-block" alt="Logo">
+                    </div>
+                    <div data-show="loading" class="form-loading">
+                        <div class="lds-css ng-scope">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-show="form" class="form-auth">
+                        <div class="form-group">
+                            <label for="token">Token:</label>
+                            <input type="text" class="form-control" required id="token" name="token">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" required id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" class="form-control" required id="password" name="password">
+                        </div>
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <a href="javascript:void(0)" class="login-btn btn-block form-send">Подтверждение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="nav-bottom navbar nav-fixed">
+        <div class="row">
+            <a class="col-xs-2 nav-dash" href="/">
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Sinoni</span>
+            </a>
+            <a class="col-xs-2 nav-api" href="/ru/api.html">
+                <i class="fa fa-code" aria-hidden="true"></i><br>
+                <span class="hidden-xs">API</span>
+            </a>
+            <a class="col-xs-2 nav-profile" href="/ru/profile.html">
+                <i class="fa fa-user" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Профиль</span>
+            </a>
+            <a class="col-xs-2 nav-price" href="/ru/price.html">
+                <i class="fa fa-usd" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Цена 4 руб</span>
+            </a>
+            <a class="col-xs-2 nav-news" href="/ru/news.html">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Новости</span>
+            </a>
+            <a class="col-xs-2 nav-contacts" href="/ru/contacts.html">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Контакты</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//www.google.com/recaptcha/api.js?render=6LcdZ6sUAAAAAPkmvfpU2oT4p2w-jtOprhNxtG5Y"></script>
+<script type="text/javascript" src="/js/custom.min.js"></script>
+
+<script>
+    function gc(){grecaptcha.ready(function(){grecaptcha.execute("6LcdZ6sUAAAAAPkmvfpU2oT4p2w-jtOprhNxtG5Y",{action:"en/confirm"}).then(function(e){var o=document.querySelector("#g-recaptcha-response");o&&(o.value=e)})})}
+    document.addEventListener("DOMContentLoaded",function(){gc();if(request("https://api.sinoni.men/profile",{},function(e,o){if(e||!o||(o&&o.error))return document.querySelector('[data-show="form"]').style.display="block",void(document.querySelector('[data-show="loading"]').style.display="none");window.location.href="/"}),document.querySelector(".form-send").addEventListener("click",function(){document.querySelector('[data-show="form"]').style.display="none";document.querySelector('[data-show="loading"]').style.display="block";var e=document.querySelector("#email"),o=document.querySelector("#password"),r=document.querySelector("#token"),t=document.querySelector("#g-recaptcha-response");return e.value?o.value?r.value?void request("https://api.sinoni.men/confirm",{email:e.value,password:o.value,token:r.value,recaptcha:t.value},function(e,r){gc();document.querySelector('[data-show="form"]').style.display="block";document.querySelector('[data-show="loading"]').style.display="none";var t=document.querySelector(".form-message");e||!r?t.innerHTML="🐛 Баг в системе :(":r.error&&r.error.msg?t.innerHTML=r.error.msg:t.innerHTML=r.result.msg;r&&r.result&&setTimeout(function(){window.location.href="/"},3e3)}):(r.style.background="#3c2c2c",document.querySelector('[data-show="form"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"):(o.style.background="#3c2c2c",document.querySelector('[data-show="form"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"):(e.style.background="#3c2c2c",document.querySelector('[data-show="form"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none")}),window.location.hash){var e=window.location.hash.substring(1);if(e){var o=e.split(/\||%7C/i),r=o[0]||"",t=o[1]||"";document.querySelector("#email").value=r,document.querySelector("#token").value=t}}});
+</script>
+
+</body>
+</html>

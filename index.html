@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sinoni.Men">
+    <meta name="description" content="Лучший синонимайзер, перефразировщик, рерайтер, уникализатор текста онлайн бесплатно без потери смысла с осбственным API">
+
+    <title>Лучший синонимайзер текста онлайн бесплатно без потери смысла</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="apple-mobile-web-app-title" content="Sinoni.Men">
+    <meta name="application-name" content="Sinoni.Men">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background:#22272b">
+
+<nav class="nav-top navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="nav-top-mobile">
+                <div class="mobile-search">
+                    <a href="javascript:void(0)" class="mobile-search-trigger" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="mobile-search-active animated fadeInDown">
+                        <div class="mobile-search-box">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input class="mobile-search-input" name="search" autofocus type="text" spellcheck="false" placeholder="Поиск ...">
+                            <button type="button" class="close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo ">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.svg" alt="Sinoni.Men" id="logo">
+                    <span>Sinoni.Men</span>
+                    <small class="hidden-xs">Онлайн рерайт</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse hidden-xs">
+            <ul class="nav navbar-nav navbar-right notify">
+                <li class="dropdown">
+                    <a href="#" class="lang dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU<span class="caret"></span></a>
+                    <ul class="lang-dropdown dropdown-menu animated flipInX">
+                        <li>
+                            <a class="lang-item" href="//rewriter.tools">
+                                <img src="/images/EN.png" alt="England flag"> English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" name="search" spellcheck="false" placeholder="Поиск ...">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="contentWrapper">
+    <div class="row h1-text">
+        <h1 class="hidden-xs">Онлайн синонимайзер, рерайтер, уникализатор текста - Sinoni.men</h1>
+        <h4 class="hidden-xs hidden-sm">Система сделает уникальность Вашего текста 20-100% автоматически.</h4>
+    </div>
+    <div class="row panel-sinoni">
+        <div class="panel-message" data-show="message" style="display: none">
+            <div class="bg-black"></div>
+            <div class="bg-text"></div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="lds-css ng-scope" data-loading="left">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div data-show="left" class="percent text-success" style="display: none">
+                <div data-rewrite="percent">43.02%</div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 table-center">
+            <div class="lds-css ng-scope" data-loading="center">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="table-responsive" data-show="center" style="display: none">
+                <table class="table table-sm table-panel-sinoni">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Количество слов:</span>
+                            <span class="visible-sm">Слов:</span>
+                        </td>
+                        <td data-rewrite="words">2034</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Заспамленность:</span>
+                            <span class="visible-sm">Спам:</span>
+                        </td>
+                        <td data-rewrite="spam">20%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Воды в тексте:</span>
+                            <span class="visible-sm">Вода:</span>
+                        </td>
+                        <td data-rewrite="water">34%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="lds-css ng-scope" data-loading="right">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="table-responsive" data-show="right" style="display: none">
+                <table class="table table-sm table-panel-sinoni">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Осталось символов:</span>
+                            <span class="visible-sm">Символов:</span>
+                        </td>
+                        <td data-rewrite="chars">2034302</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Двойной рерайт:</span>
+                            <span class="visible-sm">Двойной:</span>
+                        </td>
+                        <td>
+                            <label class="checkbox-panel">
+                                <input type="checkbox" data-rewrite="double" checked>
+                                <span class="checkbox-panel-view"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hidden-sm">Проверка уникальности:</span>
+                            <span class="visible-sm">Уникальность:</span>
+                        </td>
+                        <td>
+                            <label class="checkbox-panel">
+                                <input type="checkbox" data-rewrite="unique" checked>
+                                <span class="checkbox-panel-view"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="buttons-box col-xs-12">
+            <div class="form-group">
+                <label for="text" style="display: none;"></label>
+                <textarea class="form-control" rows="8" name="text" id="text" data-rewrite="rewrite" spellcheck="false" placeholder="Ваш текст от 100 до 600 символов ..."></textarea>
+            </div>
+            <div class="row">
+                <div class="col-xs-8" style="padding-top: 8px;">
+                    <span class="text-muted">Символов: <span data-rewrite="count">0</span></span>
+                </div>
+                <div class="col-xs-4">
+                    <a href="javascript:void(0)" class="btn btn-out-success btn-block" data-rewrite="start">
+                        <span class="hidden-xs">Рерайт текста</span><span class="visible-xs">Рерайт</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <details>
+                <summary style="margin-left: -15px">Описание</summary>
+                <div class="typo-box text-justify">
+                    <h2>Синонимайзер текста онлайн без потери смысла</h2>
+                    <hr>
+                    <p>Синонимайзер Sinoni.men сделает уникальность вашего текста 20-100% без потери смысла в предложениях. Наш сервис может делать текст уникальным за считанные секунды. Вам нужно только отправить нам свой текст, размером от 100 до 1 100 символов (бесплатно) в порядке очереди, либо без ограничения символов и без очереди <a href="/ru/price.html">от 3 руб</a> и через несколько секунд вы получите этот же текст по смысловому содержанию, написанному другими словами. Сервис не допускает граматических ошибок, однако синтаксические несоответствия могут попадаться. Уникальность вашего текста на выходе зависит от многих факторов, включая наличие в тексте большого числа имён, кличек животных, названия городов и тому подобные слова и словосочетания, у которых нет синонимов.</p>
+                    <hr>
+                    <h2>Перефразировать текст автоматически</h2>
+                    <hr>
+                    <p>Перефразировать текст для того, чтобы он смотрелся на вашем сайте как авторский уникальный текст, вы можете с помощью Sinoni.men. Наш сервис может работать на множестве языках и одинаково хорошо справляется с задачей перефразировки на каждом из них. Вы можете подать на вход нашему сервису текст на таких языках как, <strong>русский</strong> и <a href="//rewriter.tools" target="_blank">английский</a>.</p>
+                    <hr>
+                    <h2>API рерайтера для больших объемов текста</h2>
+                    <hr>
+                    <p>Если у вас есть сервис или сайт которому нужны большие объемы уникального текста или вы хотите автоматизировать поступление уникального текста на ваш сайт, для этого нас есть <a href="/ru/api.html" target="_blank">собственное API</a>. Все настройки вы можете произвести в вашей панели управления (после <a href="/ru/profile.html">регистрации</a>), а вся подробная инструкция по эксплуатации находится в <a href="/ru/api.html" target="_blank">документации</a>. Если у вас в процессе изучения и тестирования API возникнут проблемы или вопросы, вы всегда можете связаться с нами по <a href="/ru/contacts.html" target="_blank">контактным данным</a> на странице.</p>
+                    <hr>
+                    <h2>Повышение уникальности скпированной статьи</h2>
+                    <hr>
+                    <p>В век высоких технологий, найти статью которая была скопирована с другого ресурса, дело одной минуты. Поэтому при написании дипломов, курсовых работ, рефератов ученикам нужно быть предельно внимательным, чтобы их работа не была забракована из-за того, что преподаватель увидит в ней копипаст. С задачей повышения уникальности статьи поможет вам справиться сервис <a href="/">Синони.мен</a>. Просто скопируйте текст из вашего реферата в форму и запустите рерайтинг. Через несколько секунд вы получите этот же по смыслу текст, но написанный другими словами. За счет этого его уникальность повышается и учитель не заподозрит вас в плагиате. Однако как вы сами понимаете, всё делается автоматически, поэтому ручная проверка и исправление неточностей обязательна.</p><hr>
+                    <h2>Двойной рерайтинг и проверка уникальности</h2>
+                    <hr>
+                    <p>Двойной рерайтинг повышает уникальность на несколько десятков пунктов. При первой обработке текста сразу следует вторая, при которой на вход поступает уже обработанный рерайт. За счет этого статья получается еще более уникальным по структуре, но иногда полёт мыслей может обрести немного иной смысл. Уникальность каждого рерайта можно сразу проверить на антиплагиат. Для этого у Вас на <a href="/ru/profile.html">аккаунте</a> должны быть символы. Для автоматического рерайта, нормальными показателями считается уникальность текста в среднем от <span style="color: #20c0c0;">15%</span> до <span style="color: #20c0c0;">100%</span>, при двойном рерайтинге, начальный порог увеличивается в 2 раза, от <span style="color: #20c0a0;">30%</span> до <span style="color: #20c0a0;">100%</span>.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="nav-bottom navbar nav-fixed">
+        <div class="row">
+            <a class="col-xs-2 nav-dash currentPage" href="/">
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Sinoni</span>
+            </a>
+            <a class="col-xs-2 nav-api" href="/ru/api.html">
+                <i class="fa fa-code" aria-hidden="true"></i><br>
+                <span class="hidden-xs">API</span>
+            </a>
+            <a class="col-xs-2 nav-profile" href="/ru/profile.html">
+                <i class="fa fa-user" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Профиль</span>
+            </a>
+            <a class="col-xs-2 nav-price" href="/ru/price.html">
+                <i class="fa fa-usd" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Цена 4 руб</span>
+            </a>
+            <a class="col-xs-2 nav-news" href="/ru/news.html">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Новости</span>
+            </a>
+            <a class="col-xs-2 nav-contacts" href="/ru/contacts.html">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Контакты</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/custom.min.js"></script>
+
+<script>
+    var user = "ghost";
+    function setLoading(e,l,t){e||l||t||(document.querySelector('[data-show="message"]').style.display="none");var o=document.querySelector('[data-loading="left"]'),a=document.querySelector('[data-loading="center"]'),s=document.querySelector('[data-loading="right"]'),y=document.querySelector('[data-show="left"]'),d=document.querySelector('[data-show="center"]'),n=document.querySelector('[data-show="right"]');e&&(y.style.display="block",o.style.display="none"),l&&(d.style.display="block",a.style.display="none"),t&&(n.style.display="block",s.style.display="none"),e||l||t||(y.style.display="none",d.style.display="none",n.style.display="none",o.style.display="block",a.style.display="block",s.style.display="block")}function setChars(e,t,r){if(e){user=e;var n=document.querySelector('[data-rewrite="rewrite"]');t=n.value,r="register"===e?1100:"professional"===e?parseInt(document.querySelector('[data-rewrite="chars"]').innerHTML):600,n.placeholder="Ваш текст от 100 до "+r+" символов ...",n.oninput=function(){setChars("",this.value,r)},n.onkeyup=function(){setChars("",this.value,r)}}var s=document.querySelector('[data-rewrite="start"]'),o=document.querySelector('[data-rewrite="count"]');o.innerHTML=t.replace(/(<.*?>)/g,"").replace(/\s+/g," ").replace(/(^\s*)|(\s*)$/g,"").length.toString(),parseInt(o.innerHTML)?parseInt(o.innerHTML)<100||parseInt(o.innerHTML)>r?(o.style.color="#972f2c",s.removeEventListener("click",rewrite)):(o.style.color="#157d68",s.removeEventListener("click",rewrite),s.addEventListener("click",rewrite)):(o.style.color="#586874",s.removeEventListener("click",rewrite))}function setMessage(e){if(document.querySelector('[data-show="message"]').style.display="none",e){var t="register"===e?'После <a href="/ru/register.html">регистрации</a> текст увеличится до <strong>&nbsp;1&nbsp;100&nbsp;</strong> символов':"professional"===e?'<a href="/ru/price.html">Двойной рерайт</a> <strong>&nbsp;от&nbsp;4&nbsp;руб&nbsp;</strong> 1 000 символов':e;setPanel("default"),setLoading(1,1,1),document.querySelector('[data-show="message"] > .bg-text').innerHTML=t,document.querySelector('[data-show="message"]').style.display="block"}else setLoading(1,1,1)}function setPanel(n){n?"string"==typeof n&&(n={percent:43.02,words:"2034",spam:"20",water:"34",chars:"2034302",double:!0,unique:!0}):n={percent:0,words:"0",spam:"0",water:"0",chars:"0",double:!1,unique:!1},Object.keys(n).forEach(function(e){if("water"===e||"spam"===e){document.querySelector('[data-rewrite="'+e+'"]').innerHTML=n[e]+'%'}else if("rewrite"===e){document.querySelector('[data-rewrite="'+e+'"]').value=n[e]}else if("percent"===e){var t=parseFloat(n[e]).toFixed(2),r=document.querySelector('[data-rewrite="percent"]');r.innerHTML=t+"%",r.style.color=t<=0?"#586874":t<=10?"#20c0f0":t<=15?"#20c0e0":t<=20?"#20c0d0":t<=25?"#20c0c0":t<=30?"#20c0b0":"#20c0a0"}else if("unique"===e){document.querySelector('[data-rewrite="'+e+'"]').checked=!!n[e];document.querySelector('[data-show="left"]').style.opacity=!!n[e]?"1":".3";document.querySelector('[data-show="center"]').style.opacity=!!n[e]?"1":".3"}else"double"===e?document.querySelector('[data-rewrite="'+e+'"]').checked=!!n[e]:document.querySelector('[data-rewrite="'+e+'"]')&&(document.querySelector('[data-rewrite="'+e+'"]').innerHTML=n[e])})}function rewrite(){this.removeEventListener("click",rewrite),setLoading(),request("https://api.sinoni.men",{lang:"en",text:document.querySelector('[data-rewrite="rewrite"]').value,double:document.querySelector('[data-rewrite="double"]').checked,unique:document.querySelector('[data-rewrite="unique"]').checked},function(e,r){if(e||!r)return setMessage("🐛 Баг в системе :("),setLoading(1,1,1);if(r.error&&r.error.msg)return setMessage(r.error.msg),setLoading(1,1,1);var t=0,s=setInterval(function(){if(100<=++t)return clearInterval(s),setMessage("🕒 Время на проверку вышло :("),setLoading(1,1,1);request("https://api.sinoni.men",r.result,function(e,r){return e||!r?console.error(e):r.error&&r.error.msg?console.log(r.error.msg):r.result.rewrite?r.result.unique?"number"==typeof r.result.words&&"number"==typeof r.result.spam&&"number"==typeof r.result.water?"number"==typeof r.result.percent?(setPanel(r.result),setLoading(1,1,1),clearInterval(s)):(setPanel(r.result),setLoading(0,1,1)):(setPanel(r.result),setLoading(0,0,1)):("ghost"===user?(setChars("ghost"),setMessage("register"),setPanel(r.result),setLoading(1,1,1),clearInterval(s)):"register"===user?(setChars("register"),setMessage("professional"),setPanel(r.result),setLoading(1,1,1),clearInterval(s)):(setPanel(),setPanel(r.result),setLoading(1,1,1),clearInterval(s))):""})},3e3)})}document.addEventListener("DOMContentLoaded",function(){document.querySelector('[data-rewrite="double"]').addEventListener("change",function(e){var t=document.querySelector('[data-rewrite="chars"]');t.innerHTML=e.target.checked?Math.round(parseInt(t.innerHTML)/1.5).toString():Math.round(1.5*parseInt(t.innerHTML)).toString(),setChars("professional")}),document.querySelector('[data-rewrite="unique"]').addEventListener("change",function(e){document.querySelector('[data-show="left"]').style.opacity=e.target.checked?"1":".3",document.querySelector('[data-show="center"]').style.opacity=e.target.checked?"1":".3";var t=document.querySelector('[data-rewrite="chars"]');t.innerHTML=e.target.checked?Math.round(parseInt(t.innerHTML)/1.25).toString():Math.round(1.25*parseInt(t.innerHTML)).toString(),setChars("professional")}),request("https://api.sinoni.men/profile",{},function(e,t){return e||!t||(t&&t.error)?(setChars("ghost"),setMessage("register")):t.result.chars?(setPanel(),setPanel(t.result),setLoading(1,1,1),void setChars("professional")):(setChars("register"),setMessage("professional"))})});
+</script>
+
+</body>
+</html>

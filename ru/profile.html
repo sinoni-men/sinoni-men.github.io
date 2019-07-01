@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sinoni.Men">
+    <meta name="description" content="Аккаунт панели управления пользователя Sinoni.Men">
+
+    <title>Панель управления на Sinoni.Men</title>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="apple-mobile-web-app-title" content="Sinoni.Men">
+    <meta name="application-name" content="Sinoni.Men">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background:#22272b">
+
+<nav class="nav-top navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="nav-top-mobile">
+                <div class="mobile-search">
+                    <a href="javascript:void(0)" class="mobile-search-trigger" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="mobile-search-active animated fadeInDown">
+                        <div class="mobile-search-box">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input class="mobile-search-input" name="search" type="text" spellcheck="false" placeholder="Поиск ...">
+                            <button type="button" class="close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo ">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.svg" alt="Sinoni.Men" id="logo">
+                    <span>Sinoni.Men</span>
+                    <small class="hidden-xs">Панель управления</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse hidden-xs">
+            <ul class="nav navbar-nav navbar-right notify">
+                <li class="dropdown">
+                    <a href="#" class="lang dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RU<span class="caret"></span></a>
+                    <ul class="lang-dropdown dropdown-menu animated flipInX">
+                        <li>
+                            <a class="lang-item" href="//rewriter.tools">
+                                <img src="/images/EN.png" alt="England flag"> English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-search">
+                <input class="nav-search-input" type="text" name="search" spellcheck="false" placeholder="Поиск ...">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="contentWrapper">
+    <div class="row h1-text">
+        <h1 class="hidden-xs">Панель управления пользователя - Sinoni.Men</h1>
+        <h4 class="hidden-xs hidden-sm">Настройка параметров синонимайзера.</h4>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="profile-header">
+                <div class="lds-css ng-scope" data-show="loading" style="height: 120px; padding: 35px; z-index: 3">
+                    <div class="lds-ripple">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="alert-message" data-show="alert" style="display: none">
+                    <div></div>
+                    <div style="margin: 50px auto;" data-alert="message"></div>
+                </div>
+                <div class="row" data-show="panel" style="display: none">
+                    <div class="header-l col-sm-7 col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="/images/logo_border.png" alt="Sinoni.Men">
+                            </div>
+                            <div class="col-xs-8">
+                                <div data-profile="email" style="text-align: center">anonymous@example.com <span class="fa fa-sign-out"></span></div>
+                                <div style="font-size: 14px; margin: 5px; text-align: center;">
+                                    <span class="danger-token" onclick="this.style.display='none';document.querySelector('.token').style.display='block'">Показать секретный токен</span>
+                                    <span class="token" data-profile="token" style="display: none">NO TOKEN</span>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-panel-sinoni">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="hidden-sm">Двойной рерайт:</span>
+                                                <span class="visible-sm">Двойной:</span>
+                                            </td>
+                                            <td>
+                                                <label class="checkbox-panel">
+                                                    <input type="checkbox" data-update="double" checked>
+                                                    <span class="checkbox-panel-view"></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="hidden-sm">Проверка уникальности:</span>
+                                                <span class="visible-sm">Уникальность:</span>
+                                            </td>
+                                            <td>
+                                                <label class="checkbox-panel">
+                                                    <input type="checkbox" data-update="unique" checked>
+                                                    <span class="checkbox-panel-view"></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="hidden-sm">Активация API:</span>
+                                                <span class="visible-sm">API:</span>
+                                            </td>
+                                            <td>
+                                                <label class="checkbox-panel">
+                                                    <input type="checkbox" data-update="api" checked>
+                                                    <span class="checkbox-panel-view"></span>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-r col-sm-5 col-xs-12">
+                        <input type="password" class="password-input" data-update="password" placeholder="Текущий пароль">
+                        <input type="password" class="password-input" data-update="password_new" placeholder="Новый пароль">
+                        <div class="btn-info" data-update="password_upd"><span class="fa fa-user-secret"></span> Изменить пароль</div>
+                        <div class="btn-info" data-update="token_upd"><span class="fa fa-user-times"></span> Изменить токен</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="nav-bottom navbar nav-fixed">
+        <div class="row">
+            <a class="col-xs-2 nav-dash" href="/">
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Sinoni</span>
+            </a>
+            <a class="col-xs-2 nav-api" href="/ru/api.html">
+                <i class="fa fa-code" aria-hidden="true"></i><br>
+                <span class="hidden-xs">API</span>
+            </a>
+            <a class="col-xs-2 nav-profile currentPage" href="/ru/profile.html">
+                <i class="fa fa-user" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Профиль</span>
+            </a>
+            <a class="col-xs-2 nav-price" href="/ru/price.html">
+                <i class="fa fa-usd" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Цена 4 руб</span>
+            </a>
+            <a class="col-xs-2 nav-news" href="/ru/news.html">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Новости</span>
+            </a>
+            <a class="col-xs-2 nav-contacts" href="/ru/contacts.html">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                <span class="hidden-xs">Контакты</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/custom.min.js"></script>
+
+<script>
+    function showLoading(){document.querySelector('[data-show="alert"]').style.display="none",document.querySelector('[data-show="panel"]').style.display="none",document.querySelector('[data-show="loading"]').style.display="block"}function showPanel(){document.querySelector('[data-show="alert"]').style.display="none",document.querySelector('[data-show="panel"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"}function showAlert(e){document.querySelector('[data-alert="message"]').innerHTML=e,document.querySelector('[data-show="alert"]').style.display="block",document.querySelector('[data-show="panel"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"}function sendUpdate(e){var o=setTimeout(function(){showLoading()},2e3);request("https://api.sinoni.men/update",e,function(e,t){return clearTimeout(o),!e&&t&&t.result&&(document.querySelector('[data-profile="token"]').innerHTML=t.result.token),e||!t?showAlert("🐛 I'm a bug :("):t.error?showAlert(t.error.msg):void showPanel()})}document.addEventListener("DOMContentLoaded",function(){request("https://api.sinoni.men/profile",{},function(e,t){if(e||!t||t&&t.error)return showAlert('Панель управления доступна после <strong><a href="/ru/register.html">регистрации</a></strong>');showPanel(),document.querySelector('[data-profile="email"]').innerHTML=t.result.email+" <span class=\"fa fa-sign-out\" title=\"Выход\"></span>",document.querySelector('[data-profile="token"]').innerHTML=t.result.token,document.querySelector('[data-update="double"]').checked=t.result.double,document.querySelector('[data-update="unique"]').checked=t.result.unique,document.querySelector('[data-update="api"]').checked=t.result.api;document.querySelector(".fa-sign-out").addEventListener("click",function(){request("https://api.sinoni.men/logout",{},function(){window.location.href="/"})})}),document.querySelector('[data-update="double"]').addEventListener("change",function(e){sendUpdate({double:e.target.checked})}),document.querySelector('[data-update="unique"]').addEventListener("change",function(e){sendUpdate({unique:e.target.checked})}),document.querySelector('[data-update="api"]').addEventListener("change",function(e){sendUpdate({api:e.target.checked})}),document.querySelector('[data-update="token_upd"]').addEventListener("click",function(){sendUpdate({token_upd:!0})}),document.querySelector('[data-update="password_upd"]').addEventListener("click",function(){var a=document.querySelector('[data-update="password"]'),e=document.querySelector('[data-update="password_new"]');a.value&&e.value?(sendUpdate({password_new:e.value,password:a.value}),this.innerHTML='<span class="fa fa-user-secret"></span> Пароль изменен',e.value="",a.value=""):(e.value||(e.style.background="#3c2c2c"),a.value||(a.style.background="#3c2c2c"))})});
+</script>
+
+</body>
+</html>
