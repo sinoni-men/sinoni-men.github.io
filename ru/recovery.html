@@ -145,7 +145,7 @@
 <script src="/js/custom.min.js"></script>
 
 <script>
-    function gc(){grecaptcha.ready(function(){grecaptcha.execute("6LeuyKsUAAAAAP-bjHBLGPJvXS2YlzMSsR1ZsPqW",{action:"ru/recovery"}).then(function(e){var r=document.getElementById("g-recaptcha-response");r&&(r.value=e)})})}
+    function gc(){document.querySelector("#email").value="";grecaptcha.ready(function(){grecaptcha.execute("6LeuyKsUAAAAAP-bjHBLGPJvXS2YlzMSsR1ZsPqW",{action:"ru/recovery"}).then(function(e){var r=document.getElementById("g-recaptcha-response");r&&(r.value=e)})})}
     document.addEventListener("DOMContentLoaded",function(){gc();request("https://api.sinoni.men/profile",{},function(e,r){if(e||!r||(r&&r.error))return document.querySelector('[data-show="form"]').style.display="block",void(document.querySelector('[data-show="loading"]').style.display="none");window.location.href="/"}),document.querySelector(".form-send").addEventListener("click",function(){document.querySelector('[data-show="form"]').style.display="none";document.querySelector('[data-show="loading"]').style.display="block";var e=document.querySelector("#email"),r=document.querySelector("#g-recaptcha-response");if(!e.value)return (e.style.background="#3c2c2c",document.querySelector('[data-show="form"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none");request("https://api.sinoni.men/recovery",{email:e.value,recaptcha:r.value},function(e,r){gc();document.querySelector('[data-show="form"]').style.display="block";document.querySelector('[data-show="loading"]').style.display="none";var t=document.querySelector(".form-message");e||!r?t.innerHTML="🐛 Баг в системе :(":r.error&&r.error.msg?t.innerHTML=r.error.msg:t.innerHTML=r.result.msg})})});
 </script>
 
