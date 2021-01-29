@@ -145,6 +145,56 @@
                 <p><code>108</code> - Пользователь не существует</p>
                 <p><code>109</code> - API не активировано</p>
                 <hr>
+                <h3>Простой пример работы curl/wget</h3>
+                <hr>
+                <p>Отправка текста в задание</p>
+                <pre class="prettyprint lang-bash">
+    curl --header "Content-Type: application/x-www-form-urlencoded" \
+        --request POST \
+        --data "token=8aee7ab77891731083d21b853d6ef12ca044beff&lang=ru&text=Ваша статья" \
+        https://api.sinoni.men</pre>
+                <p>или wget</p>
+                <pre class="prettyprint lang-bash">
+    wget -qO- --header="Content-Type: application/x-www-form-urlencoded" \
+        --post-data="token=8aee7ab77891731083d21b853d6ef12ca044beff&lang=ru&text=Ваша статья" \
+        https://api.sinoni.men</pre>
+                <p>Получение ID задания</p>
+                <pre class="prettyprint lang-json">
+    {
+        "status": "success",
+        "result": {
+            "id": "85e56fca1ceb552d247ad5f2f312897cf298bcba",
+            "token":"8aee7ab77891731083d21b853d6ef12ca044beff"
+        }
+    }</pre>
+                <p>Проверка ID задания</p>
+                <pre class="prettyprint lang-bash">
+    curl --header "Content-Type: application/x-www-form-urlencoded" \
+        --request POST \
+        --data "token=8aee7ab77891731083d21b853d6ef12ca044beff&id=85e56fca1ceb552d247ad5f2f312897cf298bcba" \
+        https://api.sinoni.men</pre>
+                <p>или wget</p>
+                <pre class="prettyprint lang-bash">
+    wget -qO- --header="Content-Type: application/x-www-form-urlencoded" \
+        --post-data="token=8aee7ab77891731083d21b853d6ef12ca044beff&id=85e56fca1ceb552d247ad5f2f312897cf298bcba" \
+        https://api.sinoni.men</pre>
+                <p>Получение результата</p>
+                <pre class="prettyprint lang-json">
+    {
+        "status": "success",
+        "result": {
+            "rewrite": "Ваш рерайт",
+            "percent": 70.7, // Уникальность рерайта
+            "words": 345,    // Число символов
+            "spam": 32,      // Уровень спама
+            "water": 15,     // Воды в тексте
+            "chars": 100000, // Осталось символов
+            "double": true,  // Двойной рерайт включен
+            "unique": true   // Проверка уникальности включена
+        }
+    }</pre>
+            </div>
+                <hr>
                 <h3>Простой пример работы на NodeJS</h3>
                 <hr>
                 <p>Установка пакета <code>sinoni</code></p>
