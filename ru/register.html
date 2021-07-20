@@ -9,7 +9,7 @@
 
     <title>Регистрация пользователя в сервисе Sinoni.Men</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css?v4">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,20 +30,6 @@
 <nav class="nav-top navbar">
     <div class="container-fluid">
         <div class="navbar-header">
-            <div class="nav-top-mobile">
-                <div class="mobile-search">
-                    <a href="javascript:void(0)" class="mobile-search-trigger" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    <div class="mobile-search-active animated fadeInDown">
-                        <div class="mobile-search-box">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <input class="mobile-search-input" name="search" type="text" spellcheck="false" placeholder="Поиск ...">
-                            <button type="button" class="close">
-                                <span>&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="logo ">
                 <a class="navbar-brand" href="/">
                     <img src="/images/logo.svg" alt="Sinoni.Men" id="logo">
@@ -67,8 +53,9 @@
                 </li>
             </ul>
             <div class="nav-search">
-                <input class="nav-search-input" type="text" name="search" spellcheck="false" placeholder="Поиск ...">
-                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                <div class="nav-search-input">
+                    <a href="/ru/extensions.html">Онлайн рерайт на любой странице браузера во всех CMS (WordPress, 1С-Битрикс, Joomla, OpenCart, Яндекс.Дзен, DLE и др.)</a>
+                </div>
             </div>
         </div>
     </div>
@@ -149,7 +136,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//www.google.com/recaptcha/api.js?render=6LeuyKsUAAAAAP-bjHBLGPJvXS2YlzMSsR1ZsPqW"></script>
-<script src="/js/custom.min.js?v1"></script>
+<script src="/js/custom.min.js?v4"></script>
 
 <script>
     function gc(){document.querySelector("#email").value="";document.querySelector("#password").value="";grecaptcha.ready(function(){grecaptcha.execute("6LeuyKsUAAAAAP-bjHBLGPJvXS2YlzMSsR1ZsPqW",{action:"ru/register"}).then(function(e){var r=document.querySelector("#g-recaptcha-response");r&&(r.value=e)})})}

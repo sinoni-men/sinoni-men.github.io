@@ -10,7 +10,7 @@
     <title>Панель управления на Sinoni.Men</title>
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Karla">
-    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css?v4">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,20 +31,6 @@
 <nav class="nav-top navbar">
     <div class="container-fluid">
         <div class="navbar-header">
-            <div class="nav-top-mobile">
-                <div class="mobile-search">
-                    <a href="javascript:void(0)" class="mobile-search-trigger" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    <div class="mobile-search-active animated fadeInDown">
-                        <div class="mobile-search-box">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <input class="mobile-search-input" name="search" type="text" spellcheck="false" placeholder="Поиск ...">
-                            <button type="button" class="close">
-                                <span>&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="logo ">
                 <a class="navbar-brand" href="/">
                     <img src="/images/logo.svg" alt="Sinoni.Men" id="logo">
@@ -68,8 +54,9 @@
                 </li>
             </ul>
             <div class="nav-search">
-                <input class="nav-search-input" type="text" name="search" spellcheck="false" placeholder="Поиск ...">
-                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                <div class="nav-search-input">
+                    <a href="/ru/extensions.html">Онлайн рерайт на любой странице браузера во всех CMS (WordPress, 1С-Битрикс, Joomla, OpenCart, Яндекс.Дзен, DLE и др.)</a>
+                </div>
             </div>
         </div>
     </div>
@@ -195,7 +182,7 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="/js/custom.min.js?v1"></script>
+<script src="/js/custom.min.js?v4"></script>
 
 <script>
     function showLoading(){document.querySelector('[data-show="alert"]').style.display="none",document.querySelector('[data-show="panel"]').style.display="none",document.querySelector('[data-show="loading"]').style.display="block"}function showPanel(){document.querySelector('[data-show="alert"]').style.display="none",document.querySelector('[data-show="panel"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"}function showAlert(e){document.querySelector('[data-alert="message"]').innerHTML=e,document.querySelector('[data-show="alert"]').style.display="block",document.querySelector('[data-show="panel"]').style.display="block",document.querySelector('[data-show="loading"]').style.display="none"}function sendUpdate(e){var o=setTimeout(function(){showLoading()},2e3);requesto("https://api.sinoni.men/update",e,function(e,t){return clearTimeout(o),!e&&t&&t.result&&(document.querySelector('[data-profile="token"]').innerHTML=t.result.token),e||!t?showAlert("🐛 I'm a bug :("):t.error?showAlert(t.error.msg):void showPanel()})}(function(){requesto("https://api.sinoni.men/profile",{},function(e,t){if(e||!t||t&&t.error)return showAlert('Панель управления доступна после <strong><a href="/ru/register.html">регистрации</a></strong>');showPanel(),document.querySelector('[data-profile="email"]').innerHTML=t.result.email+" <span class=\"fa fa-sign-out\" title=\"Выход\"></span>",document.querySelector('[data-profile="token"]').innerHTML=t.result.token,document.querySelector('[data-update="double"]').checked=t.result.double,document.querySelector('[data-update="unique"]').checked=t.result.unique,document.querySelector('[data-update="api"]').checked=t.result.api;document.querySelector(".fa-sign-out").addEventListener("click",function(){requesto("https://api.sinoni.men/logout",{},function(){window.location.href="/"})})}),document.querySelector('[data-update="double"]').addEventListener("change",function(e){sendUpdate({double:e.target.checked})}),document.querySelector('[data-update="unique"]').addEventListener("change",function(e){sendUpdate({unique:e.target.checked})}),document.querySelector('[data-update="api"]').addEventListener("change",function(e){sendUpdate({api:e.target.checked})}),document.querySelector('[data-update="token_upd"]').addEventListener("click",function(){sendUpdate({token_upd:!0})}),document.querySelector('[data-update="password_upd"]').addEventListener("click",function(){var a=document.querySelector('[data-update="password"]'),e=document.querySelector('[data-update="password_new"]');a.value&&e.value?(sendUpdate({password_new:e.value,password:a.value}),this.innerHTML='<span class="fa fa-user-secret"></span> Пароль изменен',e.value="",a.value=""):(e.value||(e.style.background="#3c2c2c"),a.value||(a.style.background="#3c2c2c"))})})();
